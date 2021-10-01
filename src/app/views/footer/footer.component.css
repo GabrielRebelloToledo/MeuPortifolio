@@ -1,0 +1,9 @@
+.color{
+    color: black;
+    font-weight: bold;
+}
+.fundofooter{
+    background-color: rgb(78, 78, 255);
+    position: relative ; 
+    bottom: 0;
+}
