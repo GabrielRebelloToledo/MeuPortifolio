@@ -12,6 +12,7 @@ import { ExperienciasComponent } from './components/experiencias/experiencias.co
 import { FooterComponent } from './views/footer/footer.component';
 import { HeaderComponent } from './views/header/header.component';
 import { MenuComponent } from './views/menu/menu.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,14 @@ import { MenuComponent } from './views/menu/menu.component';
     ExperienciasComponent,
     FooterComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

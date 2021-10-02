@@ -2,9 +2,29 @@
     margin: 0;
     padding: 0;
 }
+.hov{
+    font-size: 1em;
+    }
+
 .sidenav{
     background-color: #d9d9d9;
+    width: 15%; 
+    margin-top: 4.56em;
+    position: fixed;
+    left: 0;
 }
+@media (min-width: 100px) and (max-width: 900px) { 
+    .hov{
+        font-size: 0;
+    }
+    .sidenav{
+        background-color: #d9d9d9;
+        width: 15%; 
+        margin-top: 4em;
+    }
+ }
+
+ 
 
 a{
     text-decoration: none;
@@ -15,11 +35,20 @@ a{
     color: white;
 }
 
+
+
+
 .aa{
     align-items: baseline;
     text-align: center;
 }
 
 .sidenav i{
-    padding-right: 10px;
+    padding-right: 0.5rem;
 }
+
+ .content{
+     padding: 1rem; 
+    background-color: #fff;
+    /* height: 38em; */
+} 

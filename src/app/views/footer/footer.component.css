@@ -4,7 +4,8 @@
     font-weight: bold;
 }
 .fundofooter{
-    background-color: rgb(78, 78, 255);
+    /* background-color: rgb(78, 78, 255); */
+    background-color: #DDAF49; 
     position: fixed ; 
     bottom: 0;
     display: flex;

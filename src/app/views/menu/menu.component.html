@@ -1,35 +1,35 @@
 <mat-sidenav-container class="fundomenu mat-elevation-z5">
-    <mat-sidenav class="sidenav" mode="side" 
+    <mat-sidenav class="sidenav " mode="side" 
     opened fixedInViewport="true" 
-    fixedTopGap="64" fixedBottomGap="64">
+      >
       <mat-nav-list class="nav-list">  
 
-         <a mat-list-item class="hov">
+         <a mat-list-item class="hov" routerLink="/">
             <i class="material-icons">
                home
             </i>
-            Inicio
+            Início
             
          </a>
-         <a mat-list-item class="hov"> 
+         <a mat-list-item class="hov" routerLink="/experiencias"> 
             <i class="material-icons">
                work
             </i> 
-            Trabalhos
+            Experiências
          </a>
-         <a mat-list-item class="hov"> 
+         <a mat-list-item class="hov" routerLink="/certificados"> 
             <i class="material-icons">
                check_circle
             </i> 
             Certificados
          </a>
-         <a mat-list-item class="hov">
+         <a mat-list-item class="hov" routerLink="/aplicacoes/mobiles">
             <i class="material-icons">
                android
             </i>
             Aplicações Mobiles
          </a>
-         <a mat-list-item class="hov">
+         <a mat-list-item class="hov" routerLink="/aplicacoes/web">
             <i class="material-icons">
                public
             </i>
@@ -37,20 +37,16 @@
          </a>
 
         
-        <!-- <ul>
-           <a href="" class=" "><li class="btn1"><mat-icon aria-hidden="false" aria-label="Example home icon" class="aa">home</mat-icon>Inicio</li></a>
-        </ul>
-        <ul>
-           <a href="" class=" "><li class="btn1">Certificados</li> </a>
-        </ul>
-        <ul>
-           <a href="" class=" "><li class="btn1">Aplicações Mobiles</li> </a>
-        </ul>
-        <ul>
-           <a href="" class=" "><li class="btn1">Aplicações Web</li> </a>
-        </ul> -->
+       
     
       </mat-nav-list>
     </mat-sidenav>
-    
+<mat-sidenav-content class="content container">
+
+   <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+
 </mat-sidenav-container>
+
+
