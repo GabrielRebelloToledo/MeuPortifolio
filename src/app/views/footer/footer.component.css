@@ -1,9 +1,14 @@
+
+
+
 .color{
     color: black;
     font-weight: bold;
 }
 .fundofooter{
     background-color: rgb(78, 78, 255);
-    position: relative ; 
+    position: fixed ; 
     bottom: 0;
+    display: flex;
+    justify-content: center;
 }

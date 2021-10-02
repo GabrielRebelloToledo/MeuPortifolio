@@ -1,5 +1,25 @@
-.fundomenu{
-    background-color: rgb(255, 255, 255);
-    width: 12em;
-    height: 80vh;
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidenav{
+    background-color: #d9d9d9;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hov:hover{
+    background-color: blue;
+    color: white;
+}
+
+.aa{
+    align-items: baseline;
+    text-align: center;
+}
+
+.sidenav i{
+    padding-right: 10px;
 }
