@@ -1,5 +1,5 @@
 {
-  "name": "curriculo",
+  "name": "meu-portifolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,25 +11,22 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
-    "@angular/cdk": "^12.2.8",
+    "@angular/cdk": "~12.2.8",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
-    "@angular/fire": "^7.0.4",
     "@angular/forms": "~12.2.0",
     "@angular/material": "^12.2.8",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "bootstrap": "^5.1.1",
-    "firebase": "^9.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.2.5",
-    "@angular/cli": "~12.2.5",
+    "@angular-devkit/build-angular": "~12.2.8",
+    "@angular/cli": "~12.2.8",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
