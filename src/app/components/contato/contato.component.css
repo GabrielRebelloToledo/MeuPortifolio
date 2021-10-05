@@ -1,0 +1,51 @@
+/* .logo{
+    max-height: 15rem;
+    min-height: 5rem;
+    height: 15em;
+    } */
+
+    .paragraf{
+        padding-left: 0.3em;
+    }
+
+
+    img{
+        height: 10em;
+        padding-left:0.3em;
+    }
+
+    .caixa{
+        background-color: rgb(231, 231, 231);
+        width: 80%;
+    }
+
+    .b{
+        font-weight: bold;
+    }
+
+    .icone{
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .botao{
+     
+        margin-left: 10px;
+        
+    }
+
+    @media (min-width: 100px) and (max-width: 900px) { 
+        .botao{
+            margin-left: 0px;
+            margin-bottom: 10px;
+            
+        }
+     }
+    @media (min-width: 901px) and (max-width: 2440px) { 
+        .botao{
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+     }

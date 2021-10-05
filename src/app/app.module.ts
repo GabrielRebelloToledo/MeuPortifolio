@@ -13,6 +13,7 @@ import { FooterComponent } from './views/footer/footer.component';
 import { HeaderComponent } from './views/header/header.component';
 import { MenuComponent } from './views/menu/menu.component';
 import { MaterialModule } from './material/material.module';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MaterialModule } from './material/material.module';
     FooterComponent,
     HeaderComponent,
     MenuComponent,
+    ContatoComponent,
    
   ],
   imports: [
