@@ -18,3 +18,11 @@
         background-color: rgb(231, 231, 231);
         width: 80%;
     }
+
+    .ajuste{
+        text-align: center;
+        align-content: center;
+     
+        margin-left: auto ;
+        margin-right: auto;
+    }

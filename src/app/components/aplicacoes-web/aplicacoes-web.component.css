@@ -1,0 +1,25 @@
+
+    .paragraf{
+        font-size: 2em;
+        
+        
+    }
+
+
+    img{
+        height: 10em;
+        padding-left:0.3em;
+    }
+
+    .caixa{
+        background-color: rgb(231, 231, 231);
+        width: 25%;
+    }
+
+    .ajuste{
+        text-align: center;
+        align-content: center;
+        
+        margin-left: auto ;
+        margin-right: auto;
+    }
