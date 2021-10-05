@@ -1,0 +1,67 @@
+/* .logo{
+    max-height: 15rem;
+    min-height: 5rem;
+    height: 15em;
+    } */
+
+    .paragraf{
+        padding-left: 0.3em;
+    }
+
+
+    img{
+        height: 10em;
+        padding-left:0.3em;
+    }
+
+    .caixa{
+        background-color: rgb(231, 231, 231);
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+    .ajuste{
+        text-align: center;
+        align-content: center;
+     
+        margin-left: auto ;
+        margin-right: auto;
+    }
+    @media (min-width: 100px) and (max-width: 900px) { 
+        .caixa{
+            width:80%;
+            height: 50%;
+        }
+        img{
+            width: 70%;
+            height: 50%;
+        }
+        .ajuste{
+            text-align: center;
+            align-content: center;
+           
+            margin-left: 10px ;
+            
+        }
+     }
+
+    .b{
+        font-weight: bold;
+    }
+
+    .icone{
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .botao{
+     
+        margin-left: 10px;
+        
+    }
+
+    
+
+    
