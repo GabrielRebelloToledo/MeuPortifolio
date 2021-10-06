@@ -36,9 +36,16 @@
         
     }
 
-    @media (min-width: 100px) and (max-width: 900px) { 
+    @media (min-width: 100px) and (max-width: 393px) { 
         .botao{
             margin-left: 0px;
+            margin-bottom: 10px;
+            
+        }
+     }
+    @media (min-width: 394px) and (max-width: 900px) { 
+        .botao{
+            margin-left: 10px;
             margin-bottom: 10px;
             
         }
