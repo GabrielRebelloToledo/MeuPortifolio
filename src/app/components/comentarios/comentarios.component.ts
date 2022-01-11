@@ -86,6 +86,13 @@ export class ComentariosComponent implements OnInit {
 
   } 
 
+  recarregar(){
+    this.alunoForm.reset();
+    this.novoComentario = false;
+    this.esconderBotao = true;
+    this.pesquisaTodos()
+  }
+
    submit() {
     if (this.alunoForm.value.id) {
       const atualizarAluno = this.alunoForm.getRawValue() as Comentarios;
@@ -104,8 +111,8 @@ export class ComentariosComponent implements OnInit {
       this.AlunoService.create(novoAluno).subscribe(
         success => {
           alert('Comentário salvo!')
-          this.router.navigate(['experiencias'])
           
+          this.recarregar();
         },
         error => {
           alert('Erro ao salvar comentário.')

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://app-portifolio-gabriel.herokuapp.com/'
+  apiUrl: 'https://gabriel-toledo.herokuapp.com/'
 };
 
 /*
