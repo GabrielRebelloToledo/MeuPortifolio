@@ -5,6 +5,9 @@
             <div class="col-lg-6 form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" formControlName="first_name" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Digite seu nome">
+                <app-msg-erro mensagem="O nome é obrigatório!" *ngIf="alunoForm.get('first_name').errors?.required && 
+            (alunoForm.get('first_name').touched)">
+        </app-msg-erro>
             </div>
 
             <div class="col-lg-6 form-group">
@@ -13,13 +16,16 @@
             </div>
             <div class="col-lg-12 form-group mt-2">
                 <label for="comentario">Comentário:</label>
-                <textarea cols="30" rows="5" class="form-control" id="comentario" formControlName="comments" aria-label="Default" aria-describedby="inputGroup-sizing-default" maxlength="1000" placeholder="Digite seu comentário"></textarea>
+                <textarea (keyup)="verificarForm()" cols="30" rows="5" class="form-control" id="comentario" formControlName="comments" aria-label="Default" aria-describedby="inputGroup-sizing-default" maxlength="1000" placeholder="Digite seu comentário"></textarea>
+                <input value="{{cont}}" style="background-color: transparent; width: 30px; border: none;float: right;" disabled>
+                <app-msg-erro mensagem="O comentário é obrigatório!" *ngIf="alunoForm.get('comments').errors?.required && 
+                (alunoForm.get('comments').touched)"></app-msg-erro>
             </div>
 
         </div>
 
-        <div class="form-group buttons text-center">
-            <button class="btn btn-success" type="submit">Comentar</button>
+        <div class="form-group buttons text-center" >
+            <button class="btn btn-success" type="submit" *ngIf="botaoComentar">Comentar</button>
         </div>
 
 

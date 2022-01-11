@@ -19,7 +19,9 @@ export class ComentariosComponent implements OnInit {
   novoComentario:boolean = false;
   esconderBotao:boolean = true;
   comentario:boolean = true;
-  
+  botaoComentar:boolean = false;
+  cont;
+
   constructor(
     private location: Location,
     private formBuilder: FormBuilder,
@@ -85,6 +87,24 @@ export class ComentariosComponent implements OnInit {
       });
 
   } 
+
+ 
+
+  verificarForm(){
+    const liberar = (<HTMLInputElement>document.getElementById("comentario")).value;
+    console.log(liberar)
+
+    this.cont = liberar.length; 
+
+    if(liberar.length > 10){
+      console.log('Passou de 10')
+      this.botaoComentar = true;
+
+      console.log(this.botaoComentar)
+    }else{
+      this.botaoComentar = false;
+    }
+  }
 
   recarregar(){
     this.alunoForm.reset();

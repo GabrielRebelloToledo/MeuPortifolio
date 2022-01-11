@@ -18,6 +18,8 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ComentariosModule } from './components/comentarios/comentarios.module';
+import { AppMsgErroComponent } from './components/app-msg-erro/app-msg-erro.component';
+import { AppMsgErroModule } from './components/app-msg-erro/app-msg-erro.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { ComentariosModule } from './components/comentarios/comentarios.module';
     HeaderComponent,
     MenuComponent,
     ContatoComponent,
-   
+    
   ],
   imports: [
     BrowserModule,
@@ -41,8 +43,8 @@ import { ComentariosModule } from './components/comentarios/comentarios.module';
     ReactiveFormsModule,
     RouterModule,
     FormsModule,
-    ComentariosModule
-    
+    ComentariosModule,
+    AppMsgErroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
