@@ -29,6 +29,8 @@ export class ComentariosComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    
+    this.pesquisaTodos();
 
      this.route.params
       .pipe(
@@ -45,7 +47,7 @@ export class ComentariosComponent implements OnInit {
       comments: ['', Validators.required],
     }); 
 
-    this.pesquisaTodos();
+    
 
   }
 
@@ -102,6 +104,7 @@ export class ComentariosComponent implements OnInit {
       this.AlunoService.create(novoAluno).subscribe(
         success => {
           alert('Comentário salvo!')
+          this.router.navigate(['experiencias'])
           window.location.reload();
         },
         error => {

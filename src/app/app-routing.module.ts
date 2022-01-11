@@ -13,6 +13,7 @@ const routes: Routes = [
     path:"",
     component:InicioComponent
   },
+  
   {
     path:"experiencias",
     component:ExperienciasComponent
