@@ -1,58 +1,54 @@
 <mat-sidenav-container class="fundomenu mat-elevation-z5">
-    <mat-sidenav class="sidenav " mode="side" 
-    opened  position="start"
-      >
-      <mat-nav-list class="nav-list">  
+    <mat-sidenav class="sidenav " mode="side" opened position="start">
+        <mat-nav-list class="nav-list">
 
-         <a mat-list-item class="hov" routerLink="/">
-            <i class="material-icons">
+            <a mat-list-item class="hov" routerLink="/">
+                <i class="material-icons">
                home
-            </i>
-            Início
-            
-         </a>
-         <a mat-list-item class="hov" routerLink="/experiencias"> 
-            <i class="material-icons">
+            </i> Início
+
+            </a>
+            <a mat-list-item class="hov" routerLink="/experiencias">
+                <i class="material-icons">
                work
-            </i> 
-            Experiências
-         </a>
-         <a mat-list-item class="hov" routerLink="/certificados"> 
-            <i class="material-icons">
+            </i> Experiências
+            </a>
+            <a mat-list-item class="hov" routerLink="/certificados">
+                <i class="material-icons">
                check_circle
-            </i> 
-            Certificados / Artigos
-         </a>
-         <a mat-list-item class="hov" routerLink="/aplicacoes/mobiles">
-            <i class="material-icons">
+            </i> Certificados / Artigos
+            </a>
+            <a mat-list-item class="hov" routerLink="/aplicacoes/mobiles">
+                <i class="material-icons">
                android
-            </i>
-            Aplicações Mobiles
-         </a>
-         <a mat-list-item class="hov" routerLink="/aplicacoes/web">
-            <i class="material-icons">
+            </i> Aplicações Mobiles
+            </a>
+            <!--  <a mat-list-item class="hov" routerLink="/aplicacoes/web">
+                <i class="material-icons">
                public
-            </i>
-            Aplicações Web
-         </a>
-         <a mat-list-item class="hov" routerLink="/contato">
-            <i class="material-icons">
+            </i> Aplicações Web
+            </a> -->
+            <a mat-list-item class="hov" routerLink="/contato">
+                <i class="material-icons">
                contact_page
-            </i>
-            Contato
-         </a>
+            </i> Contato
+            </a>
+            <hr>
+            <a mat-list-item class="hov" routerLink="/comentarios" style="padding:0; margin:0">
+                <i class="material-icons" style="padding:0; margin:0">
+               comments
+            </i> Comentários
+            </a>
 
-        
-       
-    
-      </mat-nav-list>
+
+
+
+        </mat-nav-list>
     </mat-sidenav>
-<mat-sidenav-content class="content container">
+    <mat-sidenav-content class="content container">
 
-   <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
 
     </mat-sidenav-content>
 
 </mat-sidenav-container>
-
-

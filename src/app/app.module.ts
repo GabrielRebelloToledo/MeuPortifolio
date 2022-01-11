@@ -15,6 +15,10 @@ import { MenuComponent } from './views/menu/menu.component';
 import { MaterialModule } from './material/material.module';
 import { ContatoComponent } from './components/contato/contato.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ComentariosModule } from './components/comentarios/comentarios.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,12 @@ import { ContatoComponent } from './components/contato/contato.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    RouterModule,
+    FormsModule,
+    ComentariosModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
