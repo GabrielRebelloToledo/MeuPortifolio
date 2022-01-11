@@ -105,7 +105,7 @@ export class ComentariosComponent implements OnInit {
         success => {
           alert('Comentário salvo!')
           this.router.navigate(['experiencias'])
-          window.location.reload();
+          
         },
         error => {
           alert('Erro ao salvar comentário.')
